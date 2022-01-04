@@ -11,4 +11,4 @@ if number > 5:
 elif number == 0:
     print("{} and is 0".format(number))
 elif number < 6:
-    print("{} and is less than 6 and not zero".format(number))
+    print("{} and is less than 6 and not 0".format(number))
