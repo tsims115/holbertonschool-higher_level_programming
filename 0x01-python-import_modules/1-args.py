@@ -2,9 +2,12 @@
 def main():
     import sys
     count = 0
-    print("{}".format(len(sys.argv) - 1), end=" ")
-    if len(sys.argv) - 1 == 1:
+    args = len(sys.argv) - 1
+    print("{}".format(args), end=" ")
+    if args == 1:
         print("argument:")
+    elif args == 0:
+        print("arguments.")
     else:
         print("arguments:")
     for i in sys.argv:
