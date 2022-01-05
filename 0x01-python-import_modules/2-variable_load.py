@@ -2,5 +2,5 @@
 def main():
     from variable_load_2 import a
     print("{}".format(a))
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
