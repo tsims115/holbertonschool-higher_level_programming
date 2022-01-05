@@ -3,7 +3,7 @@ def main():
     import sys
     count = 0
     print("{}".format(len(sys.argv) - 1), end=" ")
-    if len(sys.argv) == 1:
+    if len(sys.argv) - 1 == 1:
         print("argument:")
     else:
         print("arguments:")
