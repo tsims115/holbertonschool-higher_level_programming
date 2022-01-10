@@ -5,7 +5,6 @@ def best_score(a_dictionary):
     if a_dictionary is None:
         return None
     for key, value in a_dictionary.items():
-        print("{} {}".format(key, value))
         if value > best_score:
             best_score = value
     if best_score == 0:
