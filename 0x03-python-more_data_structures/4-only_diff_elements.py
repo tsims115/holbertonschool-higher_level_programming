@@ -12,4 +12,3 @@ def only_diff_elements(set_1, set_2):
             else:
                 new_set.add(j)
     return new_set
-    
