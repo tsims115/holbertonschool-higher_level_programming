@@ -8,8 +8,8 @@ def only_diff_elements(set_1, set_2):
             continue
         else:
             new_set.add(i)
-    for j in set_2: 
-        if j in set_1:
+    for j in set_2:
+        if j in set_1 and j in new_set:
             continue
         else:
             new_set.add(j)
