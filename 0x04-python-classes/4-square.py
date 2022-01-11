@@ -2,9 +2,6 @@
 """Class Square based on size with getter and setter methods"""
 
 
-from typing import Type
-
-
 class Square:
     """Class Square based on size"""
 
