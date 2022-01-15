@@ -1,0 +1,35 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+This is an example text file in reStructuredText format. First import
+``add_integer`` from the ``0-add_integer`` module:
+
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+Now use it:
+
+    >>> add_integer(5)
+    103
+    >>> add_integer(10, 5)
+    15
+    >>> add_integer(10, -5)
+    5
+    >>> add_integer(-10, 5)
+    -5
+    >>> add_integer(10, "Hello")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    >>> add_integer(1.5, 5)
+    6
+    >>> add_integer("hello", 1.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
