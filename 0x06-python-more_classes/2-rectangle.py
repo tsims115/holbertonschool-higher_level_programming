@@ -3,6 +3,11 @@
 
 
 class Rectangle:
+    """Class Rectangle based on height and width
+        width = width of rectangle
+        height = height of rectangle
+        has area and perimeter methods and a str representation
+    """
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
