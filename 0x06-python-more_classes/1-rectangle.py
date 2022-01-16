@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Module 1-rectangle with class Rectangle"""
 
 
