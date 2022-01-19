@@ -16,6 +16,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(max_integer([]), None)
         self.assertEqual(max_integer([1, 2, 3, -9, 5]), 5)
         self.assertEqual(max_integer([10, 2, 3, -9, 5]), 10)
+        self.assertEqual(max_integer([5]), 5)
     
     def test_max_integer_error(self):
         self.assertRaises(TypeError, max_integer(["hello"]))
