@@ -1,5 +1,12 @@
 #!/usr/bin/python3
+"""Module 5-text_indentation with text_indentation function"""
+
+
 def text_indentation(text):
+    """Function text_indentation
+        text: text to print out and indent
+    """
+
     flag = 0
     if not isinstance(text, str):
         raise TypeError("text must be a string")
