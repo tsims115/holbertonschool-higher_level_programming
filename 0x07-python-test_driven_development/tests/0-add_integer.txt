@@ -19,6 +19,8 @@ Now use it:
     5
     >>> add_integer(-10, 5)
     -5
+    >>> add_integer(21474836402147483640.21474836402147483640, 21474836402147483640.21474836402147483640)
+    42949672804294967296
     >>> add_integer(10, "Hello")
     Traceback (most recent call last):
         ...
