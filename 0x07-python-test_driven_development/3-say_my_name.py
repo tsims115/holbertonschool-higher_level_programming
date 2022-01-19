@@ -17,4 +17,4 @@ def say_my_name(first_name, last_name=""):
     if last_name == "":
         print(" ")
     else:
-        print(", {}".format(last_name))
+        print(" {}".format(last_name))
