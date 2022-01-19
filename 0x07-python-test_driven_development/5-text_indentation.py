@@ -21,4 +21,3 @@ def text_indentation(text):
             flag = 1
             continue
         print("{}".format(c), end="")
-    print()
