@@ -12,17 +12,23 @@ This is an example text file in reStructuredText format. First import
 Now use it:
     >>> text_indentation("hello. text")
     hello.
+    <BLANKLINE>
     text
     >>> text_indentation("hello:text")
     hello:
+    <BLANKLINE>
     text
     >>> text_indentation("hello?text? test")
     hello?
+    <BLANKLINE>
     text?
+    <BLANKLINE>
     test
     >>> text_indentation("hello? text. test")
     hello?
+    <BLANKLINE>
     text.
+    <BLANKLINE>
     test
     >>> text_indentation(1)
     Traceback (most recent call last):
