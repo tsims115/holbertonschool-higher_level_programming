@@ -24,12 +24,13 @@ Now use it:
     text?
     <BLANKLINE>
     test
-    >>> text_indentation("hello? text. test")
+    >>> text_indentation("hello? text. test:")
     hello?
     <BLANKLINE>
     text.
     <BLANKLINE>
     test
+    <BLANKLINE>
     >>> text_indentation(124)
     Traceback (most recent call last):
     TypeError: text must be a string
@@ -37,3 +38,6 @@ Now use it:
     Traceback (most recent call last):
         ...
     TypeError: text must be a string
+    >>> text_indentation(":")
+    :
+    <BLANKLINE>
