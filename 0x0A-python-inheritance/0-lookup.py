@@ -3,4 +3,8 @@
 
 
 def lookup(obj):
+    """function lookup - looks up attributes adn methods
+        obj: object to lookup
+        Return: list of attributes and methods
+    """
     return dir(obj)
