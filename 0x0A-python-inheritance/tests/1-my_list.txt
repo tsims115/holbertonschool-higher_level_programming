@@ -1,0 +1,13 @@
+ The ``1-my_list`` module
+============================
+
+Using ``print_sorted`` from ``MyList`` class
+---------------------
+
+This is an example text file in reStructuredText format. First import ``print_sorted``
+from ``MyList`` from the ``1-my_list`` module:
+
+    >>> MyList = __import__("1-my_list").MyList
+
+Now use it:
+
