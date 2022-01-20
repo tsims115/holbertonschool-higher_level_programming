@@ -32,3 +32,9 @@ Now use it:
     [[0.5, 1.93], [0.9, 2.3]]
     >>> matrix_divided([[1.5, 5.8], [2.7, 6.9]], -3)
     [[-0.5, -1.93], [-0.9, -2.3]]
+    >>> matrix_divided([[1.5, 5.8], [2.7, 6.9]])
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
