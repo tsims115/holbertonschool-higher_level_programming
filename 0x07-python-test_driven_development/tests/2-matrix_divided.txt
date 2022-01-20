@@ -38,3 +38,6 @@ Now use it:
     >>> matrix_divided()
     Traceback (most recent call last):
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+    >>> matrix_divided([1, 2, 3, 4, 5], float('inf'))
+    Traceback (most recent call last):
+    TypeError: object of type 'int' has no len()
