@@ -29,4 +29,7 @@ Now use it:
     >>> li.append(5)
     >>> li.print_sorted()
     [1, 2, 3, 4, 5]
-
+    >>> li.append("fsdf")
+    >>> li.print_sorted()
+    Traceback (most recent call last):
+    TypeError: '<' not supported between instances of 'str' and 'int'
