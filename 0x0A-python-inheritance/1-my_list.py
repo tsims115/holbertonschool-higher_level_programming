@@ -7,6 +7,10 @@ class MyList(list):
         inherits from list class with method print_sorted
     """
 
+    def __init__(self):
+        """initializes this object"""
+        super().__init__()
+
     def print_sorted(self):
         """Prints list in sorted order (ascending)
         """
