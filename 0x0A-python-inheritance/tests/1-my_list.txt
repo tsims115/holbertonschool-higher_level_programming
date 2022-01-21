@@ -12,7 +12,7 @@ from ``MyList`` from the ``1-my_list`` module:
 Now use it:
 
     >>> docs = __import__("1-my_list").MyList.__doc__
-	>>> len(c) > 1
+	>>> len(docs) > 1
 	True
 
     >>> li = MyList()
