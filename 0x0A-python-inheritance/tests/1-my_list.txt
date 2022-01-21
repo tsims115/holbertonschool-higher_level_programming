@@ -11,3 +11,12 @@ from ``MyList`` from the ``1-my_list`` module:
 
 Now use it:
 
+    >>> li = MyList()
+    >>> li.append(1)
+    >>> li.append(4)
+    >>> li.append(2)
+    >>> li.append(3)
+    >>> li.append(5)
+    >>> li.print_sorted()
+    [1, 2, 3, 4, 5]
+
