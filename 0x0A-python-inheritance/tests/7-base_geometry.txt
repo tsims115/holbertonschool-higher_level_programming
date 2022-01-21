@@ -11,6 +11,9 @@ from ``BaseGeometry`` from the ``7-base_geometry`` module:
 
 Now use it:
 
+    >>> docs = __import__("7-base_geometry").BaseGeometry.__doc__
+	>>> len(docs) > 1
+	True
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("my_int", 12)
     >>> bg.integer_validator("width", 89)
