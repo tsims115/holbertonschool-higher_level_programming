@@ -11,6 +11,9 @@ from ``MyList`` from the ``1-my_list`` module:
 
 Now use it:
 
+    >>> m = __import__("1-my_list").__doc__
+    >>> len(m) > 1
+    True
     >>> li = MyList()
     >>> li.print_sorted()
     []
