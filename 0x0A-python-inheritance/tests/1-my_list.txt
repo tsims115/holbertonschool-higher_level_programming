@@ -12,10 +12,20 @@ from ``MyList`` from the ``1-my_list`` module:
 Now use it:
 
     >>> li = MyList()
+    >>> li.print_sorted()
+    []
     >>> li.append(1)
+    >>> li.print_sorted()
+    [1]
     >>> li.append(4)
+    >>> li.print_sorted()
+    [1, 4]
     >>> li.append(2)
+    >>> li.print_sorted()
+    [1, 2, 4]
     >>> li.append(3)
+    >>> li.print_sorted()
+    [1, 2, 3, 4]
     >>> li.append(5)
     >>> li.print_sorted()
     [1, 2, 3, 4, 5]
