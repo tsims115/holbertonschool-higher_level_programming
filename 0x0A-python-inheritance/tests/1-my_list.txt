@@ -1,4 +1,4 @@
- The ``1-my_list`` module
+The ``1-my_list`` module
 ============================
 
 Using ``print_sorted`` from ``MyList`` class
@@ -33,3 +33,10 @@ Now use it:
     >>> li.print_sorted()
     Traceback (most recent call last):
     TypeError: '<' not supported between instances of 'str' and 'int'
+    >>> li = MyList()
+    >>> li.append(4)
+    >>> li.append(3)
+    >>> li.append(2)
+    >>> li.append(1)
+    >>> li.print_sorted()
+    [1, 2, 3, 4]
