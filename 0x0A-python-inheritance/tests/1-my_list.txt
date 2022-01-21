@@ -11,7 +11,7 @@ from ``MyList`` from the ``1-my_list`` module:
 
 Now use it:
 
-    >>> c = __import__("1-my_list").MyList.__doc__
+    >>> docs = __import__("1-my_list").MyList.__doc__
 	>>> len(c) > 1
 	True
 
