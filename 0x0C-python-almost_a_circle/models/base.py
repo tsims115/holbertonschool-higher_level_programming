@@ -6,6 +6,8 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """Instanciate with id if present"""
+
         if id is not None:
             self.id = id
         else:
