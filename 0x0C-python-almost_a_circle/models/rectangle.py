@@ -64,6 +64,7 @@ class Rectangle(Base):
             return
         for k, v in kwargs.items():
             if hasattr(self, k):
+                self.integer_validator(k, v)
                 setattr(self, k, v)
 
     @property
