@@ -30,7 +30,40 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(name))
 
     def area(self):
+        """Returns the area of the rectangle"""
         return self.height * self.width
+
+    def display(self):
+        """prints the rectangle with '#' """
+        if self.y != 0:
+            for i in range(self.y):
+                print()
+        for i in range(self.height):
+            num_space = self.x * ' '
+            print("{}".format(num_space), end="")
+            for j in range(self.width):
+                print("", end="#")
+            print()
+
+    def update(self, *args, **kwargs):
+        """updates the current attributes with given values"""
+        count = 0
+        for i in args:
+            if count == 0:
+                self.id = i
+            elif count == 1:
+                self.width = i
+            elif count == 2:
+                self.height = i
+            elif count == 3:
+                self.x = i
+            else:
+                self.y = i
+            count += 1
+        if args:
+            return
+        for k, v in kwargs.items():
+            setattr(self, k, v)
 
     @property
     def width(self):
@@ -67,3 +100,8 @@ class Rectangle(Base):
     def y(self, value):
         self.integer_validator("y", value)
         self.__y = value
+
+    def __str__(self):
+        string = "[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y)
+        string += " - {}/{}".format(self.width, self.height)
+        return string
