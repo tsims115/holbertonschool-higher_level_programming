@@ -28,11 +28,12 @@ class Square(Rectangle):
             return
         for k, v in kwargs.items():
             if hasattr(self, k):
-                if k == "size":
-                    self.integer_validator("width", v)
-                else:
-                    self.integer_validator(k, v)
                 setattr(self, k, v)
+
+    def to_dictionary(self):
+        new_dict = {'id': self.id, 'x': self.x, 'size': self.size}
+        new_dict['y'] = self.y
+        return new_dict
 
     def __str__(self):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
