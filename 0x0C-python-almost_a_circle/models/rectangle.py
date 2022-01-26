@@ -64,8 +64,12 @@ class Rectangle(Base):
             return
         for k, v in kwargs.items():
             if hasattr(self, k):
-                self.integer_validator(k, v)
                 setattr(self, k, v)
+
+    def to_dictionary(self):
+        new_dict = {'x': self.x, 'y': self.y, 'id': self.id}
+        new_dict['height'], new_dict['width'] = self.height, self.width
+        return new_dict
 
     @property
     def width(self):
