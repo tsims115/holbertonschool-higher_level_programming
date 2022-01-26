@@ -63,7 +63,8 @@ class Rectangle(Base):
         if args:
             return
         for k, v in kwargs.items():
-            setattr(self, k, v)
+            if hasattr(self, k):
+                setattr(self, k, v)
 
     @property
     def width(self):
