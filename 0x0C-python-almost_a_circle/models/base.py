@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Module models.base with base class"""
 
-
+from os import path
 import json
 
 
@@ -47,3 +47,22 @@ class Base:
             f.seek(0)
             f.write(json_string)
             f.truncate()
+
+    @classmethod
+    def create(cls, **dictionary):
+        obj = cls(1, 1)
+        obj.update(**dictionary)
+        return obj
+
+    @classmethod
+    def load_from_file(cls):
+        filename = cls.__name__ + ".json"
+        list_dict = []
+        if not path.exists(filename):
+            return list_dict
+        with open(filename, 'r') as f:
+            list_dict = json.load(f)
+        list_obj = []
+        for dic in list_dict:
+            list_obj.append(cls.create(**dic))
+        return list_obj
