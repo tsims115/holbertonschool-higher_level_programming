@@ -71,6 +71,7 @@ class Rectangle(Base):
                 setattr(self, k, v)
 
     def to_dictionary(self):
+        """Function to turn self into a dictionary"""
         new_dict = {'x': self.x, 'y': self.y, 'id': self.id}
         new_dict['height'], new_dict['width'] = self.height, self.width
         return new_dict
