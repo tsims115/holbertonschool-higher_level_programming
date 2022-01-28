@@ -6,6 +6,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """Class Rectangle inherits from Base class
+        private attrs: width, height, x, y
+        all have getter and setter
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """Instanciates width, height, x, y, and id
             first 4 attributes all have getter and setter methods
