@@ -10,9 +10,11 @@ class Square(Rectangle):
     """Class Square inherits from rectangle"""
 
     def __init__(self, size, x=0, y=0, id=None):
+        """Instanciates size with super init"""
         super().__init__(size, size, x, y, id)
 
     def update(self, *args, **kwargs):
+        """Updates the class square with given values"""
         count = 0
         for i in args:
             if count == 0:
@@ -31,11 +33,13 @@ class Square(Rectangle):
                 setattr(self, k, v)
 
     def to_dictionary(self):
+        """forms a dictionary from itself"""
         new_dict = {'id': self.id, 'x': self.x, 'size': self.size}
         new_dict['y'] = self.y
         return new_dict
 
     def __str__(self):
+        """String representation of Square object"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
 
     @property
