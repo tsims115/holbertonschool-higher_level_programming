@@ -113,6 +113,7 @@ class Rectangle(Base):
         self.__y = value
 
     def __str__(self):
+        """string representation of rectangle object"""
         string = "[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y)
         string += " - {}/{}".format(self.width, self.height)
         return string
