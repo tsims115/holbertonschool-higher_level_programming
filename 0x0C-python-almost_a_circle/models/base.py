@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module models.base with base class"""
 
+
 from os import path
 import json
 
@@ -63,6 +64,7 @@ class Base:
             return list_dict
         with open(filename, 'r') as f:
             list_dict = json.load(f)
+            cls.from_json_string(cls.to_json_string(list_dict))
         list_obj = []
         for dic in list_dict:
             list_obj.append(cls.create(**dic))
