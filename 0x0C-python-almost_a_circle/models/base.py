@@ -11,7 +11,6 @@ class Base:
 
     def __init__(self, id=None):
         """Instanciate with id if present"""
-
         if id is not None:
             self.id = id
         else:
@@ -50,12 +49,14 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """Creates a new object with given dict"""
         obj = cls(1, 1)
         obj.update(**dictionary)
         return obj
 
     @classmethod
     def load_from_file(cls):
+        """loads a json object form a file"""
         filename = cls.__name__ + ".json"
         list_dict = []
         if not path.exists(filename):
