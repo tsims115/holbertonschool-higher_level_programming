@@ -14,7 +14,6 @@ class TestRectangle(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         """Sets __nb_object to 0 and creates objects to be tested"""
-        Base.clear()
         cls.r1 = Rectangle(10, 5)
         cls.r2 = Rectangle(2, 2, 2, 2, -7)
         cls.r3 = Rectangle(7, 5, 6, 7, 8)
