@@ -16,6 +16,6 @@ if __name__ == "__main__":
         ORDER BY states.id ASC
         """)
     for i in range(numrows):
-        print("(%s, '%s')" % cur.fetchone())
+        print(cur.fetchone())
     cur.close()
     db.close()
