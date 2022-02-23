@@ -4,8 +4,6 @@
 if __name__ == "__main__":
     import MySQLdb
     import sys
-
-
     db = MySQLdb.connect(
         host="localhost",
         user=sys.argv[1],
