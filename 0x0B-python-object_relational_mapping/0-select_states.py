@@ -20,3 +20,5 @@ if __name__ == "__main__":
         """)
     for i in range(numrows):
         print("(%s, '%s')" % cur.fetchone())
+    cur.close()
+    db.close()
