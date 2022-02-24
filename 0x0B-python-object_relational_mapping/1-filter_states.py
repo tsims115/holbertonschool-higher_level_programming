@@ -18,7 +18,7 @@ def only_n():
     cur = db.cursor()
     numrows = cur.execute("""
         SELECT * FROM states
-        WHERE name LIKE BINARY 'N%'
+        WHERE name LIKE 'N%'
         ORDER BY states.id ASC
         """)
     for i in range(numrows):
