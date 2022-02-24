@@ -18,7 +18,7 @@ if __name__ == "__main__":
     cur = db.cursor()
     state_name = "'" + sys.argv[4] + "'"
     numrows = cur.execute("""
-        SELECT id, name FROM states
+        SELECT * FROM states
         WHERE name = %s ORDER BY states.id ASC
         """ % state_name)
     for i in range(numrows):
