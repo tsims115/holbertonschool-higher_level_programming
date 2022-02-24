@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module 1-filter_states.py with function"""
 
+
 def only_n():
 
     import MySQLdb
@@ -24,6 +25,7 @@ def only_n():
         print(cur.fetchone())
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     only_n()
