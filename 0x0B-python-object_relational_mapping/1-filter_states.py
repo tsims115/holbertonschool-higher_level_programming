@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Module 1-filter_states.py with function"""
 
-if __name__ == "__main__":
+def only_n():
 
     import MySQLdb
     import sys
@@ -24,3 +24,6 @@ if __name__ == "__main__":
         print(cur.fetchone())
     cur.close()
     db.close()
+
+if __name__ == "__main__":
+    only_n()
