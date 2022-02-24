@@ -16,11 +16,11 @@ if __name__ == "__main__":
         charset="utf8"
         )
     cur = db.cursor()
-    state_name = "'" + sys.argv[4] + "'"
     numrows = cur.execute("""
         SELECT * FROM states
-        WHERE name = %s ORDER BY states.id ASC
-        """ % state_name)
+        WHERE name LIKE BINARY '{}' 
+        ORDER BY states.id ASC
+        """.format(sys.argv[4]))
     for i in range(numrows):
         print(cur.fetchone())
     cur.close
