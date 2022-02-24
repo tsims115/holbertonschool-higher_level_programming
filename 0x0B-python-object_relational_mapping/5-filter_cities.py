@@ -19,8 +19,9 @@ if __name__ == "__main__":
         """.format(sys.argv[4]))
     for i in range(numrows):
         if i == numrows - 1:
-            print("%s" % cur.fetchone())
+            print("%s" % cur.fetchone(), end="")
             break
         print("%s" % cur.fetchone(), end=", ")
+    print()
     cur.close()
     db.close()
