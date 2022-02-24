@@ -12,6 +12,10 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
+    flag = 0
     for instance in session.query(State).order_by(State.id):
         if sys.argv[4] == instance.name:
+            flag = 1
             print("{}".format(instance.id))
+    if flag == 0:
+        print("Not found")
