@@ -21,7 +21,6 @@ if __name__ == "__main__":
         if c == "'" or c == "," or c == ";" or == ":":
             sys.argv[4] = sys.argv[4][:i]
         i += 1
-    print(sys.argv[4])
     numrows = cur.execute("""
         SELECT * FROM states
         WHERE name LIKE BINARY '{}'
