@@ -2,8 +2,10 @@
 """Module 1-filter_states.py with function"""
 
 if __name__ == "__main__":
+
     import MySQLdb
     import sys
+
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -14,7 +16,7 @@ if __name__ == "__main__":
         )
     cur = db.cursor()
     numrows = cur.execute("""
-        SELECT id, name FROM states
+        SELECT * FROM states
         WHERE name LIKE 'N%'
         ORDER BY states.id ASC
         """)
