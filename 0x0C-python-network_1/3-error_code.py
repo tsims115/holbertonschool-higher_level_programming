@@ -3,9 +3,7 @@
 
 
 import sys
-import urllib.request
-import urllib.parse
-import urllib.error
+from urllib import request, parse, error
 
 
 if __name__ == "__main__":
@@ -14,5 +12,5 @@ if __name__ == "__main__":
         req = urllib.request.Request(url)
         with urllib.request.urlopen(req) as response:
             print("{}".format(response.read().decode('utf8')))
-    except urllib.error.URLError as e:
+    except urllib.error.HTTPError as e:
         print("Error code: {}".format(e.reason))
