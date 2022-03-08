@@ -2,7 +2,6 @@
 """Module 4-hbtn_status fethces https://intranet.hbtn.io/status"""
 
 
-import sys
 import requests
 
 
