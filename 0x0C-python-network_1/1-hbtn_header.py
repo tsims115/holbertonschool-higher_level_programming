@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 1-hbtn_header.py"""
+"""Module 1-hbtn_header"""
 import sys
 import urllib.request
 

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module 2-post_email.py sends a POST"""
+"""Module 3-post_email error code"""
 
 
 import sys
