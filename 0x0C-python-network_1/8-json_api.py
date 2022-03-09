@@ -19,7 +19,7 @@ if __name__ == "__main__":
     try:
         if r.json() == {}:
             print("No result")
-            return
-        print("[{}] {}".format(r.json().get('id'), r.json().get('name')))
+        else:
+            print("[{}] {}".format(r.json().get('id'), r.json().get('name')))
     except requests.exceptions.JSONDecodeError:
         print("Not a valid JSON")
