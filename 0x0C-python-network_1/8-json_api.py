@@ -7,11 +7,11 @@ import sys
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    if len(sys.argv) <= 2 or isdigit(sys.argv[2]):
+    url = 'http://0.0.0.0:5000/search_user'
+    if len(sys.argv) <= 1 or isdigit(sys.argv[1]):
         q = ""
     else:
-        q = sys.argv[2]
+        q = sys.argv[1]
     data = {
         'q': q
     }
