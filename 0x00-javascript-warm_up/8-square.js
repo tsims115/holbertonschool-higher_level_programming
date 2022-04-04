@@ -15,7 +15,7 @@ if (isNaN(int) || flag === 1) {
   for (let i = 0; i < int; i++) {
     row = '';
     for (let j = 0; j < int; j++) {
-      row += '#';
+      row += 'X';
     }
     console.log(row);
   }
