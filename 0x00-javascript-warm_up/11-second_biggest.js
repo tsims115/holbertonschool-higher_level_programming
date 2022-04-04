@@ -22,7 +22,7 @@ for (let i = 2; args[i]; i++) {
   array.push(parseInt(args[i]));
 }
 if (array.length <= 1) {
-  console.log(0);
+  console.log('0');
 } else {
   console.log(max(array));
 }
