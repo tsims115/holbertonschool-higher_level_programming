@@ -1,19 +1,9 @@
 #!/usr/bin/node
 
 function max (a) {
-  let max = a[0];
-  let secondMax = a[0];
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] > max) {
-      max = a[i];
-    }
-  }
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] > secondMax && a[i] < max) {
-      secondMax = a[i];
-    }
-  }
-  return (secondMax);
+  const max = Math.max.apply(null, a);
+  a.splice(a.indexOf(max), 1);
+  return Math.max.apply(null, a);
 }
 
 const args = process.argv;
