@@ -1,13 +1,13 @@
 #!/usr/bin/node
-const Rectangle = require('./4-rectangle');
+const prevSquare = require('./5-square');
 
 /**
  * Class Sqaure inherits from rectangle
  */
 
-class Square extends Rectangle {
+class Square extends prevSquare {
   constructor (size) {
-    super(size, size);
+    super(size);
   }
 
   charPrint (c) {
