@@ -6,10 +6,6 @@ const prevSquare = require('./5-square');
  */
 
 class Square extends prevSquare {
-  constructor (size) {
-    super(size);
-  }
-
   charPrint (c) {
     if (!c) {
       c = 'X';
