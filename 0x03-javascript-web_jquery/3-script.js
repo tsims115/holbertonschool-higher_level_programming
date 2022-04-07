@@ -1,1 +1,8 @@
 #!/usr/bin/node
+$(function () {
+
+  $('DIV#red_header').on('click', function () {
+    $("header").addClass('red');
+  })
+
+});
