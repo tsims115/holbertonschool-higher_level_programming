@@ -9,7 +9,7 @@ request(url, function (e, response, body) {
   data = JSON.parse(body);
   for (let i = 0; i < data.length; i++) {
     let task = data[i];
-    let id = data[i].userId - 1;
+    let id = data[i].userId;
     if (task.completed === true) {
       if (!userTasks[id]) {
         userTasks[id] = 0;
