@@ -1,4 +1,3 @@
-#!/usr/bin/node
 $(function () {
   $.ajax({
     type: 'Get',

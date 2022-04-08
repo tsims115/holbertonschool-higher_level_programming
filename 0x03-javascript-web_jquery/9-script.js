@@ -1,4 +1,3 @@
-#!/usr/bin/node
 $(function () {
   let $movies = $('UL#list_movies');
   $.ajax({
